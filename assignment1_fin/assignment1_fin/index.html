@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для задания</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <section class="flex">
+
+        <a href="#" class="logo" style="font-family: 'Courier New', Courier, monospace;">
+            <i style="font-size: 2.5rem; color:whitesmoke;">AITU Brew</i>
+        </a>
+    
+        <nav class="navbar">
+            <a href="#home">главная</a>
+            <a href="#about">о нас</a>
+            <a href="#menu">меню</a>
+            <a href="#info">информация</a>
+            <a href="#products">продукты</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="profile-btn" onclick="window.location.href='register.html'"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="поиск...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+        <div class="cart-items-container">
+            <a href="#hi" class="btn checkout">Оформить заказ</a>
+            <h1 class="price_out"> </h1>
+        </div>
+
+    </section>
+
+</header>
+
+<div class="home-container">
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>AITU Brew лучше, чем Zhancoffee</h3>
+            <p>Мы предлагаем оптимальное качество за разумную цену.<br> Предпочли бы вы Zhancoffee за 1,5$, или 10 литров AITU Brew за 15$?</p>
+            <a href="#menu" class="btn">Купить</a>
+        </div>
+    
+    </section>
+
+</div>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>О нас</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Нужен кофе?</h3>
+            <p>Как простой студент AITU, я прекрасно понимаю, что сон — это роскошь. Учёба, дедлайны, проекты…</p>
+            <p>В такие моменты кофе – мой лучший друг. Я люблю этот напиток, и поэтому создал свой идеальный рецепт, который помогает не только взбодриться, но и наслаждаться каждым глотком. Если ты тоже ценишь хороший кофе, присоединяйся – делюсь с тобой своим секретом!
+
+            </p>
+            <a href="https://www.instagram.com/dauren_cd?igsh=MWpzb2d2dWFrcnZreQ==" class="btn">Узнать больше (обо мне)</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="finder">
+    <div class="sect_el">
+        <a href="#menu" class="btn">Кофе</a>
+        <a href="#products" class="btn">Кофейные зерна</a>
+        <a href="#finder" class="btn">Другие продукты</a>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> Наше <span>Меню</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/menu-1.png" alt="">
+            <h3>Эспрессо Деликатес</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf1" class="btn add_el" data-name="Эспрессо Деликатес" data-price="15.99$" data-image="images/menu-1.png">Добавить в корзину</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-2.png" alt="">
+            <h3>Капучино Блаженство</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf2" class="btn add_el" data-name="Капучино Блаженство" data-price="15.99$" data-image="images/menu-2.png">Добавить в корзину</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-3.png" alt="">
+            <h3>Мока Магия</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf3" class="btn add_el" data-name="Мока Магия" data-price="15.99$" data-image="images/menu-3.png">Добавить в корзину</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-4.png" alt="">
+            <h3>Латте Мечта</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf4" class="btn add_el" data-name="Латте Мечта" data-price="15.99$" data-image="images/menu-4.png">Добавить в корзину</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-5.png" alt="">
+            <h3>Американо Классик</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf5" class="btn add_el" data-name="Американо Классик" data-price="15.99$" data-image="images/menu-5.png">Добавить в корзину</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-6.png" alt="">
+            <h3>Карамельный Латте</h3>
+            <div class="price">15.99$ <span>20.99$</span></div>
+            <a href="#inf6" class="btn add_el" data-name="Карамельный Латте" data-price="15.99$" data-image="images/menu-6.png">Добавить в корзину</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info" id="info">
+
+    <h1 class="heading"> Информация о <span>Кофе</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <p class="inf1"> Вкусно, качественно, ароматно <br>   </p>
+            <img src="images/menu-1.png" class="user" alt="">
+            <h3>Эспрессо Деликатес</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="inf2">Добавлены лучшие ингредиенты и немного любви.</p>
+            <img src="images/menu-2.png" class="user" alt="">
+            <h3>Капучино Блаженство</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="inf3">100% натурально, с заботой об окружающей среде.</p>
+            <img src="images/menu-3.png" class="user" alt="">
+            <h3>Мока Магия</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="inf4">Продукт высшего качества, подходящий всем.</p>
+            <img src="images/menu-4.png" class="user" alt="">
+            <h3>Латте Мечта</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="inf5">Рекомендуется для настоящих ценителей кофе.</p>
+            <img src="images/menu-5.png" class="user" alt="">
+            <h3>Американо Классик</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="inf6">Кофе, который согреет душу.</p>
+            <img src="images/menu-6.png" class="user" alt="">
+            <h3>Карамельный Латте</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Наши <span>Продукты</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#hello" class="fas fa-shopping-cart add_el"  data-name="Эспрессо Деликатес" data-price="15.99$" data-image="images/product-1.png"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Эспрессо Деликатес</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15.99$ <span>20.99$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#hello" class="fas fa-shopping-cart add_el" data-name="Капучино Блаженство" data-price="15.99$" data-image="images/product-2.png"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Капучино Блаженство</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15.99$ <span>20.99$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#hello" class="fas fa-shopping-cart add_el" data-name="Мока Магия" data-price="15.99$" data-image="images/product-3.png"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Мока Магия</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15.99$ <span>20.99$</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.instagram.com/dauren_cd?igsh=MWpzb2d2dWFrcnZreQ==" class="fab fa-instagram"></a>
+    </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
